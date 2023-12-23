@@ -109,7 +109,7 @@
             <img src="IMG/hero/3.webp" alt="PC Dekstop" />
             <div class="text-content">
               <h1>DREAM SETUP</h1>
-              <h2>MAKE YOUR PC</h2>
+              <h2>MAKE YOUR COMPUTER</h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Facilis earum culpa id labore sequi laudantium eum omnis quae
@@ -170,11 +170,11 @@
       <div class="row">
         <div class="col-image">
           <div class="col-image-1">
-            <img src="IMG/about us/1.webp" alt="Keyboard">
-            <img src="IMG/about us/2.webp" alt="Mouse">
+            <img src="IMG/about us/1.webp" alt="Keyboard" class="about-image-1">
+            <img src="IMG/about us/2.webp" alt="Mouse" class="about-image-2">
           </div>
           <div class="col-image-2">
-            <img src="IMG/about us/3.webp" alt="Setup">
+            <img src="IMG/about us/3.webp" alt="Setup" class="about-image-3">
           </div>
         </div>
         <div class="col-text">
@@ -194,7 +194,6 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
       var swiper = new Swiper(".bg-slider-thumbs", {
         loop: true,
@@ -209,5 +208,26 @@
         },
       });
     </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script>
+      gsap.from('.about-image-1', {
+        scrollTriger: {
+          trigger: '.about-image-1',
+          start: '1000px 0%',
+          scrub: true,
+          markers: false
+        },
+        duration: 1,
+        x: -100,
+        opacity: 0,
+        ease: 'power2',
+        scrollTrigger: 2500});
+
+      gsap.from('.about-image-2', {duration: 1, x: 100, opacity: 0, delay: 1, ease: 'power2'});
+      gsap.from('.about-image-3', {duration: 1, y: 100, opacity: 0, delay: 2, ease: 'power2'});
+    </script>
+
   </body>
 </html>

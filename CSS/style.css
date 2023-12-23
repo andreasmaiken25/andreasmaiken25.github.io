@@ -11,6 +11,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Navbar - Start*/
@@ -428,13 +429,13 @@ nav ul li a {
   object-fit: cover;
   object-position: center;
   padding: 0 5px;
-  border-radius: 10px;
   text-align: center;
 }
 
 .about .row .col-image .col-image-2 {
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
 
 .about .row .col-image .col-image-2 img {
@@ -442,7 +443,6 @@ nav ul li a {
   height: 220px;
   object-fit: cover;
   object-position: center;
-  padding-top: 10px;
   border-radius: 10px;
 }
 
@@ -480,7 +480,6 @@ nav ul li a {
     height: 140px;
     object-fit: cover;
     object-position: center;
-    padding: 0 5px;
     border-radius: 10px;
   }
 
@@ -490,7 +489,6 @@ nav ul li a {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    padding-top: 10px;
     text-align: center;
   }
 
