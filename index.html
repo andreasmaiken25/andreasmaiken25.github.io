@@ -29,7 +29,7 @@
         <ul class="navigation-1">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Product</a></li>
+          <li><a href="#catalog">Product</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -156,7 +156,7 @@
           />
           <img src="IMG/hero/3.webp" class="swiper-slide" alt="PC Dekstop" />
           <img
-            src="IMG/hero/3.webp"
+            src="IMG/hero/4.webp"
             class="swiper-slide"
             alt="Playstation 4 Wireless Controller"
           />
@@ -185,6 +185,27 @@
     </seciton>
     <!-- About Section - End -->
 
+    <!-- Catalog - Start -->
+    <section id="catalog" class="catalog">
+      <h1 class="catalog-title">CATALOG <span>DREAM SETUP</span></h1>
+      <div class="row-catalog">
+        <div class="col-catalog setup" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="500">
+          <h4>Keybord</h4>
+          <a href="#" class="button-catalog">SEE MORE</a>
+        </div>
+        <div class="col-catalog pc">
+          <h4>Keybord</h4>
+          <img src="" alt="">
+        </div>
+        <div class="col-catalog peripheral">
+          <h4>Keybord</h4>
+          <img src="" alt="">
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Catalog - End -->
+
     <!-- Product - Start -->
     <section id="product" class="product"></section>
     <!-- Product - End -->
@@ -212,22 +233,18 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script>
-      gsap.from('.about-image-1', {
-        scrollTriger: {
-          trigger: '.about-image-1',
-          start: '1000px 0%',
-          scrub: true,
-          markers: false
-        },
-        duration: 1,
-        x: -100,
-        opacity: 0,
-        ease: 'power2',
-        scrollTrigger: 2500});
-
+      gsap.to('.about-image-1', {
+        scrollTrigger: ".about-image-1",
+        end: 500,
+        }
+      );
+      gsap.from('.about-image-1', {duration: 1, x: -100, opacity: 0, ease: 'power2'});
       gsap.from('.about-image-2', {duration: 1, x: 100, opacity: 0, delay: 1, ease: 'power2'});
       gsap.from('.about-image-3', {duration: 1, y: 100, opacity: 0, delay: 2, ease: 'power2'});
     </script>
+
+  <script type="text/javascript" src="JS/vanilla-tilt.min.js"></script>
+  </body>
 
   </body>
 </html>
