@@ -723,14 +723,14 @@ nav ul li a {
 
 @media (max-width: 992px) {
   .col-catalog {
-    position: relative;
-    width: 340px;
-    height: 400px;
-    border-radius: 15px;
-    background-color: #C683D7;
-    overflow: hidden;
-    margin: 3% 1%;
-  }
+  position: relative;
+  width: 330px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #C683D7;
+  overflow: hidden;
+  margin: 3% 1%;
+}
 }
 
 /* Catalog - End */
