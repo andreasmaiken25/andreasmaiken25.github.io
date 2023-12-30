@@ -552,8 +552,8 @@ nav ul li a {
 
 .col-catalog {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 325px;
+  height: 375px;
   border-radius: 15px;
   overflow: hidden;
   margin: 3% 1%;
@@ -566,7 +566,7 @@ nav ul li a {
   font-size: 43px;
   font-weight: 600;
   font-style: italic;
-  top: 150px;
+  top: 135px;
   left: -100px;
   opacity: 0;
   transition: 0.5s;
@@ -579,12 +579,11 @@ nav ul li a {
 }
 
 .col-catalog.setup {
-  background: url(../IMG/products/catalog/Untitled-1.webp);
+  background: url(../IMG/products/catalog/1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .col-catalog.setup::after {
   content: 'SETUP';
@@ -593,7 +592,7 @@ nav ul li a {
   font-size: 43px;
   font-weight: 600;
   font-style: italic;
-  top: 195px;
+  top: 185px;
   left: 350px;
   transition: 0.5s;
   opacity: 0;
@@ -619,7 +618,7 @@ nav ul li a {
   font-size: 43px;
   font-weight: 600;
   font-style: italic;
-  top: 195px;
+  top: 185px;
   left: 350px;
   transition: 0.5s;
   opacity: 0;
@@ -645,7 +644,7 @@ nav ul li a {
   font-size: 43px;
   font-weight: 600;
   font-style: italic;
-  top: 195px;
+  top: 185px;
   left: 350px;
   transition: 0.5s;
   opacity: 0;
