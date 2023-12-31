@@ -530,7 +530,7 @@ nav ul li a {
 /* Catalog - Start */
 #catalog {
   background-color: #0f0f0f;
-  padding: 78px 0 20px;
+  padding: 78px 2% 20px;
 }
 
 .catalog-title {
@@ -557,6 +557,7 @@ nav ul li a {
   border-radius: 15px;
   overflow: hidden;
   margin: 3% 1%;
+  border-radius: 10px;
 }
 
 .col-catalog::before {
@@ -712,7 +713,112 @@ nav ul li a {
     font-size: 32px;
     top: 145px;
   }
-
 }
 
+@media (max-width: 576px) {
+  .catalog-title {
+    font-size: 27px;
+    margin: 0px 5%;
+  }
+
+  .col-catalog {
+    position: relative;
+    width: 92%;
+    height: 350px;
+    border-radius: 15px;
+    background-color: #C683D7;
+    overflow: hidden;
+    margin: 3% 1%;
+  }
+
+  .col-catalog::before {
+    font-size: 32px;
+    top: 135px;
+  }
+
+  .col-catalog.setup::after {
+    font-size: 32px;
+    top: 175px;
+  }
+
+  .col-catalog.pc::after {
+    font-size: 32px;
+    top: 175px;
+  }
+
+  .col-catalog.peripheral::after {
+    font-size: 32px;
+    top: 175px;
+  }
+}
 /* Catalog - End */
+
+/* Product - Start */
+#product {
+  background-color: #0f0f0f;
+}
+
+.row-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-product {
+  width: 204px;
+  height: 300px;
+  background-color: white;
+  margin: 15px 5px;
+  border-radius: 10px;
+  transition: ease-in-out 0.1s;
+  overflow: hidden;
+}
+
+.col-product:hover {
+  outline: 2px solid #C683D7;
+}
+
+.col-product .love {
+  position: absolute;
+  padding: 12px 0px 0px 180px;
+  cursor: pointer;
+}
+
+.col-product .love1.love-active {
+  color: red;
+}
+
+.col-product img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.description {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.description h1 {
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+.description h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.description div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description div p {
+  font-size: 13px;
+  font-weight: 500;
+}
+/* Product - End */

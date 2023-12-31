@@ -10,3 +10,10 @@ window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// Like Catalog
+$(document).ready(function() {
+  $(".love").click(function(){
+    $(".love1").toggleClass("love-active")
+  });
+});
