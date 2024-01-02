@@ -821,4 +821,22 @@ nav ul li a {
   font-size: 13px;
   font-weight: 500;
 }
+
+@media (max-width: 576px) {
+  .col-product {
+    width: 175px;
+    height: 300px;
+    background-color: white;
+    margin: 15px 5px;
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
+    overflow: hidden;
+  }
+
+  .col-product .love {
+    position: absolute;
+    padding: 12px 0px 0px 150px;
+    cursor: pointer;
+  }
+}
 /* Product - End */
