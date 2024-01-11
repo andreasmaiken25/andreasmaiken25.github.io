@@ -187,7 +187,8 @@ nav ul li a {
 
 @media (max-width: 576px) {
   .wrapper-1 .logo {
-    font-size: 17px;
+    width: 190px;
+    padding-right: 35px;
   }
 
   .navigation-2 li a {
@@ -833,7 +834,7 @@ nav ul li a {
 
   .col-product .love {
     position: absolute;
-    padding: 12px 0px 0px 150px;
+    padding: 12px 0px 0px 1250px;
     cursor: pointer;
   }
 }
