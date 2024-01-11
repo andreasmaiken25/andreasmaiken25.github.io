@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -39,11 +40,8 @@ nav.sticky {
 }
 
 .wrapper-1 .logo {
-  text-decoration: none;
-  color: white;
-  margin-right: 15px;
-  font-size: 24px;
-  font-weight: 600;
+  width: 220px;
+  padding-right: 45px;
 }
 
 .wrapper-1 {
