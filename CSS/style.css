@@ -42,6 +42,7 @@ nav.sticky {
 .wrapper-1 .logo {
   width: 220px;
   padding-right: 45px;
+  cursor: pointer;
 }
 
 .wrapper-1 {
@@ -187,8 +188,8 @@ nav ul li a {
 
 @media (max-width: 576px) {
   .wrapper-1 .logo {
-    width: 190px;
-    padding-right: 35px;
+    width: 175px;
+    padding-right: 30px;
   }
 
   .navigation-2 li a {
@@ -834,7 +835,7 @@ nav ul li a {
 
   .col-product .love {
     position: absolute;
-    padding: 12px 0px 0px 1250px;
+    padding: 12px 0px 0px 125px;
     cursor: pointer;
   }
 }
